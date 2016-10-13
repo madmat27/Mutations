@@ -1,17 +1,14 @@
 function mutation(arr) {
   
-  var atl = [];
-  for (var i = 0; i < arr.length; i++) {
-    atl.push(arr[i].toLowerCase());
-  }
+  var str1 = arr[0].toLowerCase();
+  var str2 = arr[1].toLowerCase();
   
-  if (atl.indexOf(atl[1]) === atl[0])
+  if (str2.indexOf(str1) === 0)
     {
       return true;
     }
   else return false;
  
 }
-
 
 mutation(["hello", "Hello"]);
